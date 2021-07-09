@@ -1,19 +1,47 @@
-
+import sys
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
+from PyQt5.uic import loadUi
+from PyQt5 import QtWidgets
 import webbrowser
 from Custom_Widgets.Widgets import QCustomSlideMenu
+import tableslist
+import os
 
 import icons_rc
+import json
+
+
 
 class Ui_MainWindow(object):
+
+    
+
+
+            
+        #     os.system('python tableslist.py')
     def open_webbrowser(self):
         webbrowser.open('https://github.com/hichemhero/Tool_Box')
 
     def open_webbrowser1(self):
         webbrowser.open('https://github.com/Hamza5/Plateforme-outils-SII')
 
+    def open_webbrowser2(self):
+        webbrowser.open('https://github.com/abdelghani-amz/pyds')
+
+    def afficheData(self):
+        #     print("hi")
+            os.system('python tableslist.py')
+
+    def saveData(self):
+            os.system('python datasave.py')
+
+    def about(self):
+            os.system('python about.py')
+
+    def cancer(self):
+            os.system('python MainPfe/main.py')
 
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -165,6 +193,7 @@ class Ui_MainWindow(object):
         self.pushButton_11.setIcon(icon1)
 
         self.verticalLayout_8.addWidget(self.pushButton_11)
+        self.pushButton_11.clicked.connect(self.cancer)
 
         # self.pushButton_12 = QPushButton(self.frame_10)
         # self.pushButton_12.setObjectName(u"pushButton_12")
@@ -221,9 +250,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.addWidget(self.label_4, 0, Qt.AlignTop)
 
         self.toolBox.addItem(self.page_2, icon3, u"Drop Menu 2")
-
+        # self.toolBox.addItem(self.page_2, icon3, u"Drop Menu 3")
         self.verticalLayout_6.addWidget(self.toolBox)
-
+        
 
         self.verticalLayout_5.addWidget(self.frame_8)
 
@@ -737,20 +766,20 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_16.addWidget(self.search_widget)
 
-        # self.pushButton_2 = QPushButton(self.frame_12)
-        # self.pushButton_2.setObjectName(u"pushButton_2")
-        # icon16 = QIcon()
-        # icon16.addFile(u":/icons/icons/camera-off.svg", QSize(), QIcon.Normal, QIcon.Off)
-        # self.pushButton_2.setIcon(icon16)
-
-        # self.verticalLayout_16.addWidget(self.pushButton_2)
+        self.pushButton_2 = QPushButton(self.frame_12)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/icons/camera-off.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_2.setIcon(icon16)
+        self.verticalLayout_16.addWidget(self.pushButton_2)
+        self.pushButton_2.clicked.connect(self.saveData)
 
         self.pushButton_3 = QPushButton(self.frame_12)
         self.pushButton_3.setObjectName(u"pushButton_3")
         icon17 = QIcon()
         icon17.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_3.setIcon(icon17)
-        self.pushButton_3.clicked.connect(self.open_webbrowser)
+        self.pushButton_3.clicked.connect(self.open_webbrowser2)
 
         self.verticalLayout_16.addWidget(self.pushButton_3)
 
@@ -759,6 +788,7 @@ class Ui_MainWindow(object):
         icon18 = QIcon()
         icon18.addFile(u":/icons/icons/file-text.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_4.setIcon(icon18)
+        self.pushButton_4.clicked.connect(self.about)
 
         self.verticalLayout_16.addWidget(self.pushButton_4)
 
@@ -769,7 +799,8 @@ class Ui_MainWindow(object):
         self.pushButton_5.setIcon(icon19)
 
         self.verticalLayout_16.addWidget(self.pushButton_5)
-
+        # self.pushButton_5.clicked.connect(self.afficheData())
+        self.pushButton_5.clicked.connect(self.afficheData)
 
         self.verticalLayout_21.addWidget(self.frame_12, 0, Qt.AlignTop)
 
@@ -1131,8 +1162,8 @@ class Ui_MainWindow(object):
         self.label_13.setText("")
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:600; color:rgb(6, 77, 170);\">SETTINGS</span></p></body></html>", None))
         self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Something", None))
-        # self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Some settings", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Input Dataset", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Pyds", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"About", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"DataSets", None))
         self.search_menu_btn.setText("")
@@ -1154,5 +1185,5 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"CopyRight © 2021 by Semmar Hichem | Ameziane Abdelghani", None))
         self.bottom_menu_button.setText("")
         self.right_menu_toggle_btn.setText("")
+        
     # retranslateUi
-

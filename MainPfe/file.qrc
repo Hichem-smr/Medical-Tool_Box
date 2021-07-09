@@ -1,0 +1,187 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>assets/img/FAB-1.png</file>
+    <file>assets/img/+.png</file>
+    <file>assets/img/+-1.png</file>
+    <file>assets/img/+-2.png</file>
+    <file>assets/img/+-3.png</file>
+    <file>assets/img/+-4.png</file>
+    <file>assets/img/+-5.png</file>
+    <file>assets/img/+-6.png</file>
+    <file>assets/img/+-7.png</file>
+    <file>assets/img/+-8.png</file>
+    <file>assets/img/+-9.png</file>
+    <file>assets/img/+-10.png</file>
+    <file>assets/img/+-11.png</file>
+    <file>assets/img/+-12.png</file>
+    <file>assets/img/+-13.png</file>
+    <file>assets/img/+-14.png</file>
+    <file>assets/img/+-15.png</file>
+    <file>assets/img/Ajuda leao.png</file>
+    <file>assets/img/Ajuda leao-1.png</file>
+    <file>assets/img/Ajuda leao-2.png</file>
+    <file>assets/img/Ajuda leao-3.png</file>
+    <file>assets/img/Ajuda leao-4.png</file>
+    <file>assets/img/Ajuda leao-5.png</file>
+    <file>assets/img/alert.png</file>
+    <file>assets/img/Central da Ajuda.png</file>
+    <file>assets/img/Central da Ajuda-1.png</file>
+    <file>assets/img/Central da Ajuda-2.png</file>
+    <file>assets/img/Central da Ajuda-3.png</file>
+    <file>assets/img/Como fazer o cálculo do IR.png</file>
+    <file>assets/img/Como fazer o cálculo do IR-1.png</file>
+    <file>assets/img/Como fazer o cálculo do IR-2.png</file>
+    <file>assets/img/Como fazer o cálculo do IR-3.png</file>
+    <file>assets/img/Component 2.png</file>
+    <file>assets/img/Component 4.png</file>
+    <file>assets/img/Component 5.png</file>
+    <file>assets/img/Component 6.png</file>
+    <file>assets/img/Component 6-1.png</file>
+    <file>assets/img/cpf.png</file>
+    <file>assets/img/Declarar.png</file>
+    <file>assets/img/Declarar-1.png</file>
+    <file>assets/img/Declarar-2.png</file>
+    <file>assets/img/Declarar-3.png</file>
+    <file>assets/img/Declarar-4.png</file>
+    <file>assets/img/Declarar-5.png</file>
+    <file>assets/img/Declarar-6.png</file>
+    <file>assets/img/Declarar-7.png</file>
+    <file>assets/img/Declarar-8.png</file>
+    <file>assets/img/Declarar-9.png</file>
+    <file>assets/img/FAB.png</file>
+    <file>assets/img/FAB-1.png</file>
+    <file>assets/img/FAB-2.png</file>
+    <file>assets/img/FAB-3.png</file>
+    <file>assets/img/FAB-4.png</file>
+    <file>assets/img/FAB-5.png</file>
+    <file>assets/img/Flying around the world-rafiki 2.png</file>
+    <file>assets/img/Inventory.png</file>
+    <file>assets/img/Inventory-1.png</file>
+    <file>assets/img/Inventory-2.png</file>
+    <file>assets/img/Inventory-3.png</file>
+    <file>assets/img/Inventory-4.png</file>
+    <file>assets/img/Inventory-5.png</file>
+    <file>assets/img/Inventory-6.png</file>
+    <file>assets/img/Inventory-7.png</file>
+    <file>assets/img/Inventory-8.png</file>
+    <file>assets/img/Inventory-9.png</file>
+    <file>assets/img/Inventory-10.png</file>
+    <file>assets/img/Inventory-11.png</file>
+    <file>assets/img/Inventory-12.png</file>
+    <file>assets/img/Inventory-13.png</file>
+    <file>assets/img/leao 1.png</file>
+    <file>assets/img/Line 1.png</file>
+    <file>assets/img/Line 1-1.png</file>
+    <file>assets/img/Line 1-2.png</file>
+    <file>assets/img/Line 1-3.png</file>
+    <file>assets/img/Line 1-4.png</file>
+    <file>assets/img/Line 1-5.png</file>
+    <file>assets/img/Line 2.png</file>
+    <file>assets/img/Line 2-1.png</file>
+    <file>assets/img/Line 2-2.png</file>
+    <file>assets/img/Line 2-3.png</file>
+    <file>assets/img/Line 2-4.png</file>
+    <file>assets/img/Line 2-5.png</file>
+    <file>assets/img/Line 4.png</file>
+    <file>assets/img/Line 4-1.png</file>
+    <file>assets/img/Line 4-2.png</file>
+    <file>assets/img/Line 4-3.png</file>
+    <file>assets/img/Line 4-4.png</file>
+    <file>assets/img/Line 4-5.png</file>
+    <file>assets/img/Line 5.png</file>
+    <file>assets/img/Line 5-1.png</file>
+    <file>assets/img/Line 6.png</file>
+    <file>assets/img/Line 6-1.png</file>
+    <file>assets/img/Line 7.png</file>
+    <file>assets/img/Line 7-1.png</file>
+    <file>assets/img/Navigatonal menu.png</file>
+    <file>assets/img/Navigatonal menu-1.png</file>
+    <file>assets/img/Online-cuate 1.png</file>
+    <file>assets/img/O que acontece com quem cai na malha fina_.png</file>
+    <file>assets/img/O que acontece com quem cai na malha fina_-1.png</file>
+    <file>assets/img/O que acontece com quem cai na malha fina_-2.png</file>
+    <file>assets/img/O que acontece com quem cai na malha fina_-3.png</file>
+    <file>assets/img/path395.png</file>
+    <file>assets/img/profile.png</file>
+    <file>assets/img/Quais documentos eu preciso entregar_.png</file>
+    <file>assets/img/Quais documentos eu preciso entregar_-1.png</file>
+    <file>assets/img/Quais documentos eu preciso entregar_-2.png</file>
+    <file>assets/img/Quais documentos eu preciso entregar_-3.png</file>
+    <file>assets/img/Quem precisa declarar_.png</file>
+    <file>assets/img/Quem precisa declarar_-1.png</file>
+    <file>assets/img/Quem precisa declarar_-2.png</file>
+    <file>assets/img/Quem precisa declarar_-3.png</file>
+    <file>assets/img/receita-federal 1.png</file>
+    <file>assets/img/receita-federal 1-1.png</file>
+    <file>assets/img/receita-federal 2.png</file>
+    <file>assets/img/receita-federal 2-1.png</file>
+    <file>assets/img/receita-federal 3.png</file>
+    <file>assets/img/receita-federal 3-1.png</file>
+    <file>assets/img/Receita Federal.png</file>
+    <file>assets/img/receita-federal-letra 1.png</file>
+    <file>assets/img/receita-federal-letra 1-1.png</file>
+    <file>assets/img/receita-federal-letra 1-2.png</file>
+    <file>assets/img/receita-federal-letra 1-3.png</file>
+    <file>assets/img/receita-federal-letra 2.png</file>
+    <file>assets/img/receita-federal-letra 2-1.png</file>
+    <file>assets/img/Receita Federal - Mobile.png</file>
+    <file>assets/img/Receita Federal - Mobile 2.png</file>
+    <file>assets/img/Receita Federal - Mobile 3.png</file>
+    <file>assets/img/Receita Federal - Mobile-1.png</file>
+    <file>assets/img/Receita Federal - Modo Dark.png</file>
+    <file>assets/img/Rectangle.png</file>
+    <file>assets/img/Rectangle-1.png</file>
+    <file>assets/img/Rectangle-2.png</file>
+    <file>assets/img/Rectangle-3.png</file>
+    <file>assets/img/Rectangle-4.png</file>
+    <file>assets/img/Rectangle-5.png</file>
+    <file>assets/img/Rectangle-6.png</file>
+    <file>assets/img/Rectangle-7.png</file>
+    <file>assets/img/Rectangle-8.png</file>
+    <file>assets/img/Rectangle-9.png</file>
+    <file>assets/img/Rectangle-10.png</file>
+    <file>assets/img/Rectangle-11.png</file>
+    <file>assets/img/Rectangle-12.png</file>
+    <file>assets/img/Rectangle-13.png</file>
+    <file>assets/img/Rectangle-14.png</file>
+    <file>assets/img/Rectangle-15.png</file>
+    <file>assets/img/Rectangle-16.png</file>
+    <file>assets/img/Rectangle-17.png</file>
+    <file>assets/img/Rectangle-18.png</file>
+    <file>assets/img/Rectangle-19.png</file>
+    <file>assets/img/Rectangle-20.png</file>
+    <file>assets/img/Rectangle-21.png</file>
+    <file>assets/img/Rectangle-22.png</file>
+    <file>assets/img/Rectangle-23.png</file>
+    <file>assets/img/Rectangle-24.png</file>
+    <file>assets/img/Rectangle-25.png</file>
+    <file>assets/img/Restituição do IR.png</file>
+    <file>assets/img/Restituição do IR-1.png</file>
+    <file>assets/img/Search.png</file>
+    <file>assets/img/Search-1.png</file>
+    <file>assets/img/Search-2.png</file>
+    <file>assets/img/Search-3.png</file>
+    <file>assets/img/Search-4.png</file>
+    <file>assets/img/Search-5.png</file>
+    <file>assets/img/setting.png</file>
+    <file>assets/img/Settings.png</file>
+    <file>assets/img/Settings-1.png</file>
+    <file>assets/img/Settings-2.png</file>
+    <file>assets/img/Settings-3.png</file>
+    <file>assets/img/Settings-4.png</file>
+    <file>assets/img/Settings-5.png</file>
+    <file>assets/img/Top Bar_2.png</file>
+    <file>assets/img/Top Bar_2-1.png</file>
+    <file>assets/img/Top Bar_2-2.png</file>
+    <file>assets/img/Top Bar_2-3.png</file>
+    <file>assets/img/Top Bar_2-4.png</file>
+    <file>assets/img/Top Bar_2-5.png</file>
+    <file>assets/img/Top Bar_timesheets.png</file>
+    <file>assets/img/Top Bar_timesheets-1.png</file>
+    <file>assets/img/Top Bar_timesheets-2.png</file>
+    <file>assets/img/Top Bar_timesheets-3.png</file>
+    <file>assets/img/Top Bar_timesheets-4.png</file>
+    <file>assets/img/Top Bar_timesheets-5.png</file>
+    <file>assets/img/path395.png</file>
+  </qresource>
+</RCC>
