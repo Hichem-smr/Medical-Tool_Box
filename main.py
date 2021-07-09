@@ -20,6 +20,7 @@ class MainWindow(QMainWindow):
         loadJsonStyle(self, self.ui)
         self.ui.menu_widget.collapseMenu()
         self.show()
+        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
