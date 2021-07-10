@@ -35,6 +35,10 @@ class Ui_MainWindow(object):
     def open_webbrowser2(self):
         webbrowser.open('https://github.com/abdelghani-amz/pyds')
 
+
+
+    def dempster(self):
+            os.system("wine 'Dempster and shafter'/Dse.exe")
     def afficheData(self):
         #     print("hi")
             os.system('python tableslist.py')
@@ -1291,6 +1295,8 @@ class Ui_MainWindow(object):
         self.pushButton_13.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
         self.pushButton_13.clicked.connect(self.open_webbrowser1)
         self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        
+        self.pushButton_14.clicked.connect(self.dempster)
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Demo UI v 0.9.5", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("MainWindow", u"Combination tool", None))
         self.exit_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
