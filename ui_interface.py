@@ -1,19 +1,56 @@
-
+import sys
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
+from PyQt5.uic import loadUi
+from PyQt5 import QtWidgets
 import webbrowser
 from Custom_Widgets.Widgets import QCustomSlideMenu
+import tableslist
+import os
 
 import icons_rc
+import json
+
+
 
 class Ui_MainWindow(object):
+
+    
+
+
+            
+        #     os.system('python tableslist.py')
+
+    def image_webbrowser(self):
+            webbrowser.open('https://github.com/joshuawillman/Photo-Editor')
+    def image_exe(self):
+            os.system('python Photo-Editor-master/photo_editor_v5.py')
     def open_webbrowser(self):
         webbrowser.open('https://github.com/hichemhero/Tool_Box')
 
     def open_webbrowser1(self):
         webbrowser.open('https://github.com/Hamza5/Plateforme-outils-SII')
 
+    def open_webbrowser2(self):
+        webbrowser.open('https://github.com/abdelghani-amz/pyds')
+
+
+
+    def dempster(self):
+            os.system("wine 'Dempster and shafter'/Dse.exe")
+    def afficheData(self):
+        #     print("hi")
+            os.system('python tableslist.py')
+
+    def saveData(self):
+            os.system('python datasave.py')
+
+    def about(self):
+            os.system('python about.py')
+
+    def cancer(self):
+            os.system('python MainPfe/main.py')
 
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -155,31 +192,22 @@ class Ui_MainWindow(object):
         icon.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_10.setIcon(icon)
         self.pushButton_10.setIconSize(QSize(16, 16))
-
         self.verticalLayout_8.addWidget(self.pushButton_10)
-
         self.pushButton_11 = QPushButton(self.frame_10)
         self.pushButton_11.setObjectName(u"pushButton_11")
         icon1 = QIcon()
         icon1.addFile(u"icons/logo.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_11.setIcon(icon1)
-
         self.verticalLayout_8.addWidget(self.pushButton_11)
-
-        # self.pushButton_12 = QPushButton(self.frame_10)
-        # self.pushButton_12.setObjectName(u"pushButton_12")
+        self.pushButton_11.clicked.connect(self.cancer)
         icon2 = QIcon()
         icon2.addFile(u":/icons/icons/key.svg", QSize(), QIcon.Normal, QIcon.Off)
-        # self.pushButton_12.setIcon(icon2)
-
-        # self.verticalLayout_8.addWidget(self.pushButton_12)
-
-
         self.verticalLayout_7.addWidget(self.frame_10, 0, Qt.AlignTop)
-
         icon3 = QIcon()
         icon3.addFile(u":/icons/icons/chevron-down.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.toolBox.addItem(self.page, icon3, u"Drop Menu 1")
+
+
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.page_2.setGeometry(QRect(0, 0, 250, 547))
@@ -200,33 +228,175 @@ class Ui_MainWindow(object):
         icon4 = QIcon()
         icon4.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_13.setIcon(icon4)
-
         self.verticalLayout_10.addWidget(self.pushButton_13)
-
         self.pushButton_14 = QPushButton(self.frame_11)
         self.pushButton_14.setObjectName(u"pushButton_14")
         icon5 = QIcon()
         icon5.addFile(u"icons/logo.ico", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_14.setIcon(icon5)
-
         self.verticalLayout_10.addWidget(self.pushButton_14)
-
-
         self.verticalLayout_9.addWidget(self.frame_11, 0, Qt.AlignTop)
+        # self.label_4 = QLabel(self.page_2)
+        # self.label_4.setObjectName(u"label_4")
+        # self.label_4.setWordWrap(True)
+        # self.verticalLayout_9.addWidget(self.label_4, 0, Qt.AlignTop)
+        self.toolBox.addItem(self.page_2, icon3, u"Drop Menu 2")
 
+
+
+        self.page_a = QWidget()
+        self.page_a.setObjectName(u"page_a")
+        self.page_a.setGeometry(QRect(0, 0, 250, 547))
+        self.verticalLayout_a = QVBoxLayout(self.page_a)
+        self.verticalLayout_a.setSpacing(0)
+        self.verticalLayout_a.setObjectName(u"verticalLayout_a")
+        self.verticalLayout_a.setContentsMargins(0, 0, 0, 0)
+        self.frame_a = QFrame(self.page_a)
+        self.frame_a.setObjectName(u"frame_a")
+        self.frame_a.setFrameShape(QFrame.StyledPanel)
+        self.frame_a.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_b = QVBoxLayout(self.frame_a)
+        self.verticalLayout_b.setSpacing(0)
+        self.verticalLayout_b.setObjectName(u"verticalLayout_b")
+        self.verticalLayout_b.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_a = QPushButton(self.frame_a)
+        self.pushButton_a.setObjectName(u"pushButton_a")
+        icona = QIcon()
+        icona.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_a.setIcon(icona)
+        self.verticalLayout_b.addWidget(self.pushButton_a)
+        self.pushButton_b = QPushButton(self.frame_a)
+        self.pushButton_b.setObjectName(u"pushButton_b")
+        iconb = QIcon()
+        iconb.addFile(u"icons/logo.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_b.setIcon(iconb)
+        self.verticalLayout_b.addWidget(self.pushButton_b)
+        self.verticalLayout_a.addWidget(self.frame_a, 0, Qt.AlignTop)
+        self.label_a = QLabel(self.page_a)
+        self.label_a.setObjectName(u"label_a")
+        self.label_a.setWordWrap(True)
+        self.verticalLayout_a.addWidget(self.label_a, 0, Qt.AlignTop)
+        self.toolBox.addItem(self.page_a, icon3, u"Drop menu 3")
+
+
+
+        self.page_aa = QWidget()
+        self.page_aa.setObjectName(u"page_a")
+        self.page_aa.setGeometry(QRect(0, 0, 250, 547))
+        self.verticalLayout_aa = QVBoxLayout(self.page_aa)
+        self.verticalLayout_aa.setSpacing(0)
+        self.verticalLayout_aa.setObjectName(u"verticalLayout_aa")
+        self.verticalLayout_aa.setContentsMargins(0, 0, 0, 0)
+        self.frame_aa = QFrame(self.page_aa)
+        self.frame_aa.setObjectName(u"frame_a")
+        self.frame_aa.setFrameShape(QFrame.StyledPanel)
+        self.frame_aa.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_bb = QVBoxLayout(self.frame_aa)
+        self.verticalLayout_bb.setSpacing(0)
+        self.verticalLayout_bb.setObjectName(u"verticalLayout_bb")
+        self.verticalLayout_bb.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_aa = QPushButton(self.frame_aa)
+        self.pushButton_aa.setObjectName(u"pushButton_aa")
+        icona = QIcon()
+        icona.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_aa.setIcon(icona)
+        self.verticalLayout_bb.addWidget(self.pushButton_aa)
+        self.pushButton_bb = QPushButton(self.frame_aa)
+        self.pushButton_bb.setObjectName(u"pushButton_bb")
+        iconb = QIcon()
+        iconb.addFile(u"icons/logo.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_bb.setIcon(iconb)
+        self.verticalLayout_bb.addWidget(self.pushButton_bb)
+        self.verticalLayout_aa.addWidget(self.frame_aa, 0, Qt.AlignTop)
+        self.label_aa = QLabel(self.page_a)
+        self.label_aa.setObjectName(u"label_a")
+        self.label_aa.setWordWrap(True)
+        self.verticalLayout_aa.addWidget(self.label_aa, 0, Qt.AlignTop)
+        self.toolBox.addItem(self.page_aa, icon3, u"Drop menu 4")
+
+        # self.toolBox.addItem(self.page_a, icon3, u"Future project 4")
+
+
+        self.page_aaa = QWidget()
+        self.page_aaa.setObjectName(u"page_aaa")
+        self.page_aaa.setGeometry(QRect(0, 0, 250, 547))
+        self.verticalLayout_a = QVBoxLayout(self.page_aaa)
+        self.verticalLayout_a.setSpacing(0)
+        self.verticalLayout_a.setObjectName(u"verticalLayout_a")
+        self.verticalLayout_a.setContentsMargins(0, 0, 0, 0)
+        self.frame_a = QFrame(self.page_aaa)
+        self.frame_a.setObjectName(u"frame_a")
+        self.frame_a.setFrameShape(QFrame.StyledPanel)
+        self.frame_a.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_b = QVBoxLayout(self.frame_a)
+        self.verticalLayout_b.setSpacing(0)
+        self.verticalLayout_b.setObjectName(u"verticalLayout_b")
+        self.verticalLayout_b.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_aaa = QPushButton(self.frame_a)
+        self.pushButton_aaa.setObjectName(u"pushButton_a")
+        icona = QIcon()
+        icona.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_aaa.setIcon(icona)
+        self.verticalLayout_b.addWidget(self.pushButton_aaa)
+        self.pushButton_bbb = QPushButton(self.frame_a)
+        self.pushButton_bbb.setObjectName(u"pushButton_bbb")
+        iconb = QIcon()
+        iconb.addFile(u"icons/logo.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_bbb.setIcon(iconb)
+        self.verticalLayout_b.addWidget(self.pushButton_bbb)
+        self.verticalLayout_a.addWidget(self.frame_a, 0, Qt.AlignTop)
+        self.label_a = QLabel(self.page_aaa)
+        self.label_a.setObjectName(u"label_a")
+        self.label_a.setWordWrap(True)
+        self.verticalLayout_a.addWidget(self.label_a, 0, Qt.AlignTop)
+        self.toolBox.addItem(self.page_aaa, icon3, u"Drop menu 5")
+
+        self.page_aaaa = QWidget()
+        self.page_aaaa.setObjectName(u"page_aaaa")
+        self.page_aaaa.setGeometry(QRect(0, 0, 250, 547))
+        self.verticalLayout_a = QVBoxLayout(self.page_aaaa)
+        self.verticalLayout_a.setSpacing(0)
+        self.verticalLayout_a.setObjectName(u"verticalLayout_a")
+        self.verticalLayout_a.setContentsMargins(0, 0, 0, 0)
+        self.frame_a = QFrame(self.page_aaaa)
+        self.frame_a.setObjectName(u"frame_a")
+        self.frame_a.setFrameShape(QFrame.StyledPanel)
+        self.frame_a.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_b = QVBoxLayout(self.frame_a)
+        self.verticalLayout_b.setSpacing(0)
+        self.verticalLayout_b.setObjectName(u"verticalLayout_b")
+        self.verticalLayout_b.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_aaaa = QPushButton(self.frame_a)
+        self.pushButton_aaaa.setObjectName(u"pushButton_aaaa")
+        icona = QIcon()
+        icona.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_aaaa.setIcon(icona)
+        self.verticalLayout_b.addWidget(self.pushButton_aaaa)
+        self.pushButton_bbbb = QPushButton(self.frame_a)
+        self.pushButton_bbbb.setObjectName(u"pushButton_bbbb")
+        iconb = QIcon()
+        iconb.addFile(u"icons/logo.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_bbbb.setIcon(iconb)
+        self.verticalLayout_b.addWidget(self.pushButton_bbbb)
+        self.verticalLayout_a.addWidget(self.frame_a, 0, Qt.AlignTop)
+        self.label_a = QLabel(self.page_aaaa)
+        self.label_a.setObjectName(u"label_a")
+        self.label_a.setWordWrap(True)
+        self.verticalLayout_a.addWidget(self.label_a, 0, Qt.AlignTop)
         self.label_4 = QLabel(self.page_2)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setWordWrap(True)
+        self.verticalLayout_a.addWidget(self.label_4, 0, Qt.AlignTop)
+        self.toolBox.addItem(self.page_aaaa, icon3, u"Drop menu 6")
 
-        self.verticalLayout_9.addWidget(self.label_4, 0, Qt.AlignTop)
+        # self.toolBox.addItem(self.page_a, icon3, u"Future project 6")
 
-        self.toolBox.addItem(self.page_2, icon3, u"Drop Menu 2")
+
+
+
 
         self.verticalLayout_6.addWidget(self.toolBox)
-
-
         self.verticalLayout_5.addWidget(self.frame_8)
-
         self.frame_9 = QFrame(self.slide_menu)
         self.frame_9.setObjectName(u"frame_9")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
@@ -737,20 +907,20 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_16.addWidget(self.search_widget)
 
-        # self.pushButton_2 = QPushButton(self.frame_12)
-        # self.pushButton_2.setObjectName(u"pushButton_2")
-        # icon16 = QIcon()
-        # icon16.addFile(u":/icons/icons/camera-off.svg", QSize(), QIcon.Normal, QIcon.Off)
-        # self.pushButton_2.setIcon(icon16)
-
-        # self.verticalLayout_16.addWidget(self.pushButton_2)
+        self.pushButton_2 = QPushButton(self.frame_12)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/icons/camera-off.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_2.setIcon(icon16)
+        self.verticalLayout_16.addWidget(self.pushButton_2)
+        self.pushButton_2.clicked.connect(self.saveData)
 
         self.pushButton_3 = QPushButton(self.frame_12)
         self.pushButton_3.setObjectName(u"pushButton_3")
         icon17 = QIcon()
         icon17.addFile(u":/icons/icons/github.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_3.setIcon(icon17)
-        self.pushButton_3.clicked.connect(self.open_webbrowser)
+        self.pushButton_3.clicked.connect(self.open_webbrowser2)
 
         self.verticalLayout_16.addWidget(self.pushButton_3)
 
@@ -759,6 +929,7 @@ class Ui_MainWindow(object):
         icon18 = QIcon()
         icon18.addFile(u":/icons/icons/file-text.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_4.setIcon(icon18)
+        self.pushButton_4.clicked.connect(self.about)
 
         self.verticalLayout_16.addWidget(self.pushButton_4)
 
@@ -769,7 +940,8 @@ class Ui_MainWindow(object):
         self.pushButton_5.setIcon(icon19)
 
         self.verticalLayout_16.addWidget(self.pushButton_5)
-
+        # self.pushButton_5.clicked.connect(self.afficheData())
+        self.pushButton_5.clicked.connect(self.afficheData)
 
         self.verticalLayout_21.addWidget(self.frame_12, 0, Qt.AlignTop)
 
@@ -1083,7 +1255,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.toolBox.setCurrentIndex(1)
+        self.toolBox.setCurrentIndex(5)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1096,11 +1268,35 @@ class Ui_MainWindow(object):
         self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
         self.pushButton_10.clicked.connect(self.open_webbrowser)
         self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
-        # self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"ITEM 3", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("MainWindow", u"Mammo-Cancer Detector ", None))
+
+        self.pushButton_a.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_a.clicked.connect(self.image_webbrowser)
+        self.pushButton_b.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        self.pushButton_b.clicked.connect(self.image_exe)
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page_a), QCoreApplication.translate("MainWindow", u"Image Editor", None))
+
+        self.pushButton_aa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_aa.clicked.connect(self.open_webbrowser)
+        self.pushButton_bb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page_aa), QCoreApplication.translate("MainWindow", u"Future Project 4", None))
+
+        self.pushButton_aaa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_aaa.clicked.connect(self.open_webbrowser)
+        self.pushButton_bbb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page_aaa), QCoreApplication.translate("MainWindow", u"Future Project 5", None))
+
+        self.pushButton_aaaa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_aaaa.clicked.connect(self.open_webbrowser)
+        self.pushButton_bbbb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page_aaaa), QCoreApplication.translate("MainWindow", u"Future Project 6", None))
+
+
         self.pushButton_13.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
         self.pushButton_13.clicked.connect(self.open_webbrowser1)
         self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        
+        self.pushButton_14.clicked.connect(self.dempster)
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Demo UI v 0.9.5", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("MainWindow", u"Combination tool", None))
         self.exit_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
@@ -1131,8 +1327,8 @@ class Ui_MainWindow(object):
         self.label_13.setText("")
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:600; color:rgb(6, 77, 170);\">SETTINGS</span></p></body></html>", None))
         self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search Something", None))
-        # self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Some settings", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Input Dataset", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Pyds", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"About", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"DataSets", None))
         self.search_menu_btn.setText("")
@@ -1154,5 +1350,5 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"CopyRight © 2021 by Semmar Hichem | Ameziane Abdelghani", None))
         self.bottom_menu_button.setText("")
         self.right_menu_toggle_btn.setText("")
+        
     # retranslateUi
-
