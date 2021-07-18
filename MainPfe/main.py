@@ -13,18 +13,39 @@ files = []
 i = 0
 n = 0
 
+d = "a"
+
 class Cancer(QDialog):
+    def Progload(self):
+        global d
+        d = d +'/'
+        os.chdir(d)
+        print(os.getcwd())
+        self.hide()
+        os.system('python MainPfe/main.py')
+        
+
     def __init__(self):
         super(Cancer, self).__init__()
         loadUi('Windows/Cancer_result.ui', self)
-        self.Load.clicked.connect(self.close)
+        self.Load.clicked.connect(self.Progload)
         self.Save.clicked.connect(self.close)
 
 class Normal(QDialog):
+    def Progload(self):
+        global d
+        d = d + '/'
+        os.chdir(d)
+        print(os.getcwd())
+        self.hide()
+        os.system('python MainPfe/main.py')
+        
+
+    
     def __init__(self):
         super(Normal, self).__init__()
         loadUi('Windows/Normal_result.ui', self)
-        self.Load.clicked.connect(self.close)
+        self.Load.clicked.connect(self.Progload)
         self.Save.clicked.connect(self.close)
 
 class CancerRight(QDialog):
@@ -346,6 +367,7 @@ class MainMLO(QtWidgets.QMainWindow):
         MLO_WINDOW.hide()
         W_FILTERS.show()
 
+d = os.getcwd() 
 os.chdir(os.getcwd() + "/" + "MainPfe/")
 print(os.getcwd())
 app = QtWidgets.QApplication(sys.argv)

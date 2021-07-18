@@ -22,10 +22,34 @@ class Ui_MainWindow(object):
             
         #     os.system('python tableslist.py')
 
-    def image_webbrowser(self):
+
+
+    def open_webbrowser_Project_4(self):
+        webbrowser.open('https://github.com/hichemhero/Tool_Box')
+        
+    def open_webbrowser_Project_5(self):
+        webbrowser.open('https://github.com/hichemhero/Tool_Box')
+
+    def open_webbrowser_Project_6(self):
+        webbrowser.open('https://github.com/hichemhero/Tool_Box')
+
+    def image_webbrowser_Project_3(self):
             webbrowser.open('https://github.com/joshuawillman/Photo-Editor')
-    def image_exe(self):
+
+
+    def Project_4_exe(self):
+            os.system('')
+
+    def Project_5_exe(self):
+            os.system('')
+
+    def Project_6_exe(self):
+            os.system('')
+
+    def Project3_exe(self):
             os.system('python Photo-Editor-master/photo_editor_v5.py')
+
+            
     def open_webbrowser(self):
         webbrowser.open('https://github.com/hichemhero/Tool_Box')
 
@@ -1271,24 +1295,27 @@ class Ui_MainWindow(object):
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("MainWindow", u"Mammo-Cancer Detector ", None))
 
         self.pushButton_a.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.pushButton_a.clicked.connect(self.image_webbrowser)
+        self.pushButton_a.clicked.connect(self.image_webbrowser_Project_3)
         self.pushButton_b.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
-        self.pushButton_b.clicked.connect(self.image_exe)
+        self.pushButton_b.clicked.connect(self.Project3_exe)
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_a), QCoreApplication.translate("MainWindow", u"Image Editor", None))
 
         self.pushButton_aa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.pushButton_aa.clicked.connect(self.open_webbrowser)
+        self.pushButton_aa.clicked.connect(self.open_webbrowser_Project_4)
         self.pushButton_bb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        # self.pushButton_b.clicked.connect(self.Project_4_exe)
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_aa), QCoreApplication.translate("MainWindow", u"Future Project 4", None))
 
         self.pushButton_aaa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.pushButton_aaa.clicked.connect(self.open_webbrowser)
+        self.pushButton_aaa.clicked.connect(self.open_webbrowser_Project_5)
         self.pushButton_bbb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        # self.pushButton_b.clicked.connect(self.Project_5_exe)
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_aaa), QCoreApplication.translate("MainWindow", u"Future Project 5", None))
 
         self.pushButton_aaaa.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.pushButton_aaaa.clicked.connect(self.open_webbrowser)
+        self.pushButton_aaaa.clicked.connect(self.open_webbrowser_Project_6)
         self.pushButton_bbbb.setText(QCoreApplication.translate("MainWindow", u"App.exe", None))
+        # self.pushButton_b.clicked.connect(self.Project_6_exe)
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_aaaa), QCoreApplication.translate("MainWindow", u"Future Project 6", None))
 
 

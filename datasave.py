@@ -32,13 +32,13 @@ class MainDataSet(QMainWindow):
         Desc = str(self.Desc.text())
         url = str(self.url.text())
 
-        f = open('Dicti/outputfile',)
+        f = open('Dataset/outputfile',)
         people = json.load(f)   
 
         element={"name":Desc,"address":url}
         people.append(element)
         
-        with open('Dicti/outputfile', 'w') as fout:
+        with open('Dataset/outputfile', 'w') as fout:
             json.dump(people, fout)
 
         self.close()

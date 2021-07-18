@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         self.loaddata()
 
     def loaddata(self):
-        f = open('Dicti/outputfile',)
+        f = open('Dataset/outputfile',)
         people = json.load(f)   
 
         row=0
