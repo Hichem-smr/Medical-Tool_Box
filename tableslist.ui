@@ -72,7 +72,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>View Table Data </string>
+     <string>MEDICAL DATASETS</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
@@ -86,12 +86,12 @@ color: rgb(255, 255, 255);
     </property>
     <column>
      <property name="text">
-      <string>Name</string>
+      <string>Description</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Age</string>
+      <string>Url</string>
      </property>
     </column>
    </widget>
@@ -112,7 +112,7 @@ background-color: rgb(0, 0, 0);</string>
   </widget>
  </widget>
  <resources>
-  <include location="../../Desktop/DashBoard/Dashboard/icons.qrc"/>
+  <include location="../DashBoard/Dashboard/icons.qrc"/>
  </resources>
  <connections/>
 </ui>
