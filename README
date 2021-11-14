@@ -8,8 +8,8 @@ Toolbox assembling all medical softwares in one open source project, some projec
 -Detecting and classifying Platform based on mammary pathologies using mammography images.
 
 Technologies used : 
-Python 3.x.
-OpenCV (Python library).
-NumPy (Python library).
-Pandas (Python library).
-PyQT5 (Python library)
+--Python 3.x.
+--OpenCV (Python library).
+--NumPy (Python library).
+--Pandas (Python library).
+--PyQT5 (Python library).
