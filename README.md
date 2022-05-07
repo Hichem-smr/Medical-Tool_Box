@@ -13,15 +13,11 @@ Toolbox assembling all medical softwares in one open source project, some projec
 
 ## Technologies used : 
 
-### Python 3.x.
-
-### OpenCV (Python library).
-
-### NumPy (Python library).
-
-### Pandas (Python library).
-
-### PyQT5 (Python library).
+**Python 3.x.
+**OpenCV (Python library).
+**NumPy (Python library).
+**Pandas (Python library).
+**PyQT5 (Python library).
 
 # Licence & Copyright
 
