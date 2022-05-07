@@ -9,7 +9,8 @@ d’images mammographies.
 
 ## English : 
 Toolbox assembling all medical softwares in one open source project, some projects included : 
--Detecting and classifying Platform based on mammary pathologies using mammography images.
+-Detecting and classifying Platform based on mammary pathologies using mammography images, during the realization of the last we had to use a python library called pyds containing programmed mass functions, in the meantime we added nonexistent mass functions as contribution.
+
 
 ## Technologies used : 
 
@@ -22,6 +23,8 @@ Toolbox assembling all medical softwares in one open source project, some projec
 **Pandas (Python library).**
 
 **PyQT5 (Python library).**
+
+**Pyds (Our Contributed python library)** : https://github.com/abdelghani-amz/pyds
 
 ## Licence & Copyright
 
