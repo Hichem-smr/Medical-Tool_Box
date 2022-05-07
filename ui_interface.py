@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
 
 
             
-        #     os.system('python tableslist.py')
+        #     os.system('python3 tableslist.py')
 
 
 
@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
             os.system('')
 
     def Project3_exe(self):
-            os.system('python Photo-Editor-master/photo_editor_v5.py')
+            os.system('python3 Photo-Editor-master/photo_editor_v5.py')
 
             
     def open_webbrowser(self):
@@ -65,16 +65,16 @@ class Ui_MainWindow(object):
             os.system("wine 'Dempster and shafter'/Dse.exe")
     def afficheData(self):
         #     print("hi")
-            os.system('python tableslist.py')
+            os.system('python3 tableslist.py')
 
     def saveData(self):
-            os.system('python datasave.py')
+            os.system('python3 datasave.py')
 
     def about(self):
-            os.system('python about.py')
+            os.system('python3 about.py')
 
     def cancer(self):
-            os.system('python MainPfe/main.py')
+            os.system('python3 MainPfe/main.py')
 
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
