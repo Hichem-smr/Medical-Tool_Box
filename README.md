@@ -1,3 +1,6 @@
+**Medical-Tool_Box Project**
+
+
 French :
 Boîte à outils assemblant tous les logiciels médicaux en un seul projet open source, quelques projets inclus :
 -Plateforme de détection et de classification de pathologies mammaires à partir
@@ -8,8 +11,14 @@ Toolbox assembling all medical softwares in one open source project, some projec
 -Detecting and classifying Platform based on mammary pathologies using mammography images.
 
 Technologies used : 
+
 --Python 3.x.
+
 --OpenCV (Python library).
+
 --NumPy (Python library).
+
 --Pandas (Python library).
+
 --PyQT5 (Python library).
+
