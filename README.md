@@ -35,5 +35,5 @@ pip install -r requirements.txt
 
 ## Contributing
 If you think your Medical project fits into the tool box, Please follow this youtube tutorial of how to insert your project into the tool box
-[This is an external link to genome.gov] (https://www.genome.gov/)
+https://www.youtube.com/watch?v=gtOgq1Jpk3k&ab_channel=Hichem-Extremist
 
