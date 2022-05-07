@@ -26,6 +26,8 @@ Toolbox assembling all medical softwares in one open source project, some projec
 
 **Pyds (Our Contributed python library)** : https://github.com/abdelghani-amz/pyds
 
+**Detecting and classifying Platform mammography cancer** : https://github.com/hichemhero/Breast-Cancer-Detection
+
 ## Licence & Copyright
 
 © Semmar hichem & Ameziane abdelghani
