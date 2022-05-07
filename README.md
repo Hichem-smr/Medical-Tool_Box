@@ -23,7 +23,13 @@ Toolbox assembling all medical softwares in one open source project, some projec
 
 **PyQT5 (Python library).**
 
-# Licence & Copyright
+## Licence & Copyright
 
 © Semmar hichem & Ameziane abdelghani
+
+## Requirements :
+
+***bash
+pip install - requirements.txt
+***
 
