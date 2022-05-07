@@ -30,6 +30,5 @@ Toolbox assembling all medical softwares in one open source project, some projec
 ## Requirements :
 
 ***bash
-pip install - requirements.txt
-***
+pip install - requirements.txt***
 
